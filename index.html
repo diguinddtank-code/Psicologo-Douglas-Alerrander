@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Douglas Alerrander | Psicólogo Clínico</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ['"Playfair Display"', 'serif'],
+              sans: ['"Lato"', 'sans-serif'],
+            },
+            colors: {
+              // Replacing Stone with Slate (Cooler Grey)
+              stone: {
+                50: '#f8fafc', // slate-50
+                100: '#f1f5f9', // slate-100
+                200: '#e2e8f0', // slate-200
+                300: '#cbd5e1', // slate-300
+                400: '#94a3b8',
+                500: '#64748b',
+                600: '#475569',
+                700: '#334155',
+                800: '#1e293b', // slate-800
+                900: '#0f172a', // slate-900
+              },
+              // Replacing Sage with a Custom Deep Blue Palette
+              sage: {
+                50: '#eff6ff', // blue-50
+                100: '#dbeafe', // blue-100
+                200: '#bfdbfe', // blue-200
+                300: '#93c5fd',
+                400: '#60a5fa',
+                500: '#3b82f6', // blue-500
+                600: '#2563eb',
+                700: '#1d4ed8', // blue-700
+                800: '#1e40af', // blue-800 (Navy)
+                900: '#1e3a8a', // blue-900 (Deep Navy)
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 100px; /* Offset to ensure sections are not hidden behind the fixed header */
+      }
+      body {
+        font-family: 'Lato', sans-serif;
+        background-color: #f8fafc; /* slate-50 */
+        color: #0f172a; /* slate-900 */
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Playfair Display', serif;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "framer-motion": "https://esm.sh/framer-motion@^12.23.26",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
